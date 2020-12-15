@@ -10,6 +10,7 @@ This is a spring boot application with in memory database *H2*. I am using JPA(J
 - Spring Boot
 - Lombok
 - Docker
+-Swagger UI
 
 ## Problem Statement
 
@@ -50,5 +51,5 @@ select * from bank_transaction;
 
 Press `ctrl+enter`.
 
-Now, I think you are all set up.
+Now, I think you are all set up. You can access the all the API using Swagger http://localhost:8080/swagger-ui.html
 
