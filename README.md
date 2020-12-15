@@ -33,9 +33,9 @@ $ ./gradlew clean build
 
 ## Functionality
 
-Since project uses *H2* in-memory database, some sample data has already been provided to get started with. Below are snapshot of data that already exists in the table :
+Since project uses *H2* in-memory database, some sample data has already been provided to get started with.
 
-* You can see the entries in the table for yourself. Navigate to `http://localhost:8080/h2-console` .
+You can see the entries in the table for yourself. Navigate to `http://localhost:8080/h2-console` .
 
 **Make sure**  that you use `jdbc:h2:mem:testdb` as JDBC URL. Click connect.
 
