@@ -4,6 +4,12 @@ This project is about  *Building a Java library for online banking platform to b
 
 This is a spring boot application with in memory database *H2*. I am using JPA(Java Persistance API) to interact with the in memory database.
 
+## Tools Used
+
+- Java 11
+- Spring Boot
+- Lombok
+- Docker
 
 ## Problem Statement
 
@@ -21,7 +27,7 @@ Following steps illustrate procedures you need to follow to run the code :
 $ ./gradlew clean build
 ```
 
-`Step 2` : Run the Spring Boot Application or run the Docker compose (docker-compose up)
+`Step 2` : Run the Spring Boot Application or run the Docker compose (<b>docker-compose up</b>)
 
 * Now navigate to http://localhost:8080/ :
 
