@@ -1,0 +1,52 @@
+plugins {
+	id "java"
+	id "org.springframework.boot" version "2.2.6.RELEASE"
+	id "io.spring.dependency-management" version "1.0.8.RELEASE"
+}
+
+version = "1.0.0-SNAPSHOT"
+sourceCompatibility = 11
+
+ext {
+	springCloudVersion = "Greenwich.RELEASE"
+	lombokVersion = "1.18.12"
+	swaggerVersion = "2.9.2"
+	mapstructVersion = "1.3.1.Final"
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("io.springfox:springfox-swagger-ui:${swaggerVersion}")
+	implementation("io.springfox:springfox-swagger2:${swaggerVersion}")
+	implementation("org.springframework.data:spring-data-commons")
+	implementation("org.projectlombok:lombok:${lombokVersion}")
+	implementation('javax.persistence:javax.persistence-api:2.2')
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.0")
+	implementation("org.mapstruct:mapstruct:${mapstructVersion}")
+	implementation("org.zalando:logbook-spring-boot-starter:1.13.0")
+	implementation("com.h2database:h2")
+	implementation("org.hsqldb:hsqldb")
+	implementation("mysql:mysql-connector-java")
+	implementation("org.javassist:javassist:3.23.1-GA")
+	implementation("org.xerial:sqlite-jdbc:3.8.11.2")
+	implementation("net.kemitix:sqlite-dialect:0.1.0")
+	implementation("org.springframework.data:spring-data-jpa")
+	implementation("org.apache.commons:commons-lang3:3.11")
+	annotationProcessor("org.mapstruct:mapstruct-processor:${mapstructVersion}")
+	annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+	testImplementation("org.testcontainers:junit-jupiter:1.12.2")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

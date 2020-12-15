@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  ewallet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ewallet:0.0.1-SNAPSHOT
+    ports:
+      - 8080:8080
