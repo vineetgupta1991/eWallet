@@ -10,7 +10,7 @@ This is a spring boot application with in memory database *H2*. I am using JPA(J
 - Spring Boot
 - Lombok
 - Docker
--Swagger UI
+- Swagger UI
 
 ## Problem Statement
 
